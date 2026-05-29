@@ -1,0 +1,184 @@
+/* Terminal/Hacker Style */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');
+
+:root {
+  --green: #00ff41;
+  --green-dim: #00cc33;
+  --green-dark: #003b00;
+  --black: #0a0a0a;
+  --gray: #1a1a1a;
+}
+
+/* Base */
+body {
+  background-color: var(--black) !important;
+  color: var(--green) !important;
+  font-family: 'Share Tech Mono', monospace !important;
+}
+
+/* Header */
+header, .bg-near-black {
+  background-color: #000 !important;
+  border-bottom: 1px solid var(--green) !important;
+}
+
+header a, nav a {
+  color: var(--green) !important;
+  font-family: 'VT323', monospace !important;
+  font-size: 1.2rem !important;
+  letter-spacing: 2px !important;
+}
+
+header a:hover, nav a:hover {
+  color: #fff !important;
+  text-shadow: 0 0 8px var(--green) !important;
+}
+
+/* Site title */
+.site-brand a {
+  color: var(--green) !important;
+  font-family: 'VT323', monospace !important;
+  font-size: 1.8rem !important;
+  letter-spacing: 3px !important;
+  text-shadow: 0 0 10px var(--green) !important;
+}
+
+/* Main content area */
+main, .mw7, article {
+  background-color: var(--black) !important;
+  color: var(--green) !important;
+}
+
+/* Article titles */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--green) !important;
+  font-family: 'VT323', monospace !important;
+  letter-spacing: 2px !important;
+  text-shadow: 0 0 6px var(--green-dim) !important;
+}
+
+/* Links */
+a {
+  color: var(--green-dim) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #fff !important;
+  text-shadow: 0 0 8px var(--green) !important;
+}
+
+/* Article cards on home page */
+.bg-white, .bg-light-gray {
+  background-color: var(--gray) !important;
+  border: 1px solid var(--green-dark) !important;
+}
+
+.bg-white:hover {
+  border-color: var(--green) !important;
+  box-shadow: 0 0 12px var(--green-dark) !important;
+}
+
+/* Post content */
+.article-body, .content {
+  color: var(--green) !important;
+  line-height: 1.8 !important;
+}
+
+/* Code blocks */
+pre, code {
+  background-color: #0d1a0d !important;
+  color: #a0ff80 !important;
+  border: 1px solid var(--green-dark) !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  border-radius: 4px !important;
+}
+
+pre {
+  padding: 1rem !important;
+  overflow-x: auto !important;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+}
+
+th {
+  background-color: var(--green-dark) !important;
+  color: var(--green) !important;
+  border: 1px solid var(--green) !important;
+  padding: 8px !important;
+}
+
+td {
+  border: 1px solid var(--green-dark) !important;
+  padding: 8px !important;
+  color: var(--green) !important;
+}
+
+tr:hover {
+  background-color: #0d1a0d !important;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 3px solid var(--green) !important;
+  background-color: #0d1a0d !important;
+  padding: 0.5rem 1rem !important;
+  color: var(--green-dim) !important;
+}
+
+/* Footer */
+footer {
+  background-color: #000 !important;
+  border-top: 1px solid var(--green-dark) !important;
+  color: var(--green-dim) !important;
+}
+
+footer a {
+  color: var(--green-dim) !important;
+}
+
+/* Date and meta */
+time, .f6, .gray {
+  color: var(--green-dim) !important;
+  font-family: 'Share Tech Mono', monospace !important;
+}
+
+/* Horizontal rules */
+hr {
+  border-color: var(--green-dark) !important;
+}
+
+/* Strong/bold */
+strong, b {
+  color: #80ff80 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--green-dark);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
+}
+
+/* Blinking cursor effect on title */
+.site-brand a::after {
+  content: '_';
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
