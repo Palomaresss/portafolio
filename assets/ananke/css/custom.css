@@ -1,184 +1,265 @@
-/* Terminal/Hacker Style */
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');
+/* VS Code Dark Theme Style */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-  --green: #00ff41;
-  --green-dim: #00cc33;
-  --green-dark: #003b00;
-  --black: #0a0a0a;
-  --gray: #1a1a1a;
+  --bg: #1e1e1e;
+  --bg-sidebar: #252526;
+  --bg-panel: #2d2d2d;
+  --bg-hover: #2a2d2e;
+  --blue: #569cd6;
+  --blue-light: #9cdcfe;
+  --purple: #c586c0;
+  --green: #4ec9b0;
+  --green-string: #ce9178;
+  --yellow: #dcdcaa;
+  --white: #d4d4d4;
+  --gray: #858585;
+  --border: #3e3e42;
+  --accent: #0078d4;
 }
 
-/* Base */
 body {
-  background-color: var(--black) !important;
-  color: var(--green) !important;
-  font-family: 'Share Tech Mono', monospace !important;
+  background-color: var(--bg) !important;
+  color: var(--white) !important;
+  font-family: 'Inter', sans-serif !important;
 }
 
 /* Header */
 header, .bg-near-black {
-  background-color: #000 !important;
-  border-bottom: 1px solid var(--green) !important;
+  background-color: #323233 !important;
+  border-bottom: 1px solid var(--border) !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4) !important;
 }
 
 header a, nav a {
-  color: var(--green) !important;
-  font-family: 'VT323', monospace !important;
-  font-size: 1.2rem !important;
-  letter-spacing: 2px !important;
+  color: var(--white) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.5px !important;
 }
 
 header a:hover, nav a:hover {
   color: #fff !important;
-  text-shadow: 0 0 8px var(--green) !important;
+  background-color: var(--bg-hover) !important;
 }
 
 /* Site title */
 .site-brand a {
-  color: var(--green) !important;
-  font-family: 'VT323', monospace !important;
-  font-size: 1.8rem !important;
-  letter-spacing: 3px !important;
-  text-shadow: 0 0 10px var(--green) !important;
+  color: var(--white) !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 1.1rem !important;
+  letter-spacing: 1px !important;
 }
 
-/* Main content area */
+.site-brand a::before {
+  content: '> ';
+  color: var(--accent) !important;
+}
+
+/* Main content */
 main, .mw7, article {
-  background-color: var(--black) !important;
-  color: var(--green) !important;
+  background-color: var(--bg) !important;
+  color: var(--white) !important;
 }
 
-/* Article titles */
-h1, h2, h3, h4, h5, h6 {
+/* Headings */
+h1 {
+  color: var(--yellow) !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 1.8rem !important;
+  border-bottom: 1px solid var(--border) !important;
+  padding-bottom: 0.5rem !important;
+}
+
+h2 {
+  color: var(--blue) !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 1.4rem !important;
+}
+
+h2::before {
+  content: '## ';
+  color: var(--gray) !important;
+  font-size: 0.9em !important;
+}
+
+h3 {
+  color: var(--purple) !important;
+  font-family: 'Fira Code', monospace !important;
+}
+
+h3::before {
+  content: '### ';
+  color: var(--gray) !important;
+  font-size: 0.9em !important;
+}
+
+h4, h5, h6 {
   color: var(--green) !important;
-  font-family: 'VT323', monospace !important;
-  letter-spacing: 2px !important;
-  text-shadow: 0 0 6px var(--green-dim) !important;
+  font-family: 'Fira Code', monospace !important;
 }
 
 /* Links */
 a {
-  color: var(--green-dim) !important;
+  color: var(--blue-light) !important;
   text-decoration: none !important;
 }
 
 a:hover {
   color: #fff !important;
-  text-shadow: 0 0 8px var(--green) !important;
+  text-decoration: underline !important;
 }
 
-/* Article cards on home page */
+/* Article cards */
 .bg-white, .bg-light-gray {
-  background-color: var(--gray) !important;
-  border: 1px solid var(--green-dark) !important;
+  background-color: var(--bg-panel) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
 }
 
 .bg-white:hover {
-  border-color: var(--green) !important;
-  box-shadow: 0 0 12px var(--green-dark) !important;
-}
-
-/* Post content */
-.article-body, .content {
-  color: var(--green) !important;
-  line-height: 1.8 !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 1px var(--accent) !important;
 }
 
 /* Code blocks */
-pre, code {
-  background-color: #0d1a0d !important;
-  color: #a0ff80 !important;
-  border: 1px solid var(--green-dark) !important;
-  font-family: 'Share Tech Mono', monospace !important;
-  border-radius: 4px !important;
-}
-
 pre {
+  background-color: #1a1a1a !important;
+  border: 1px solid var(--border) !important;
+  border-left: 3px solid var(--accent) !important;
+  border-radius: 4px !important;
   padding: 1rem !important;
   overflow-x: auto !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 0.88rem !important;
+  line-height: 1.6 !important;
+}
+
+code {
+  background-color: #1a1a1a !important;
+  color: var(--green-string) !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 0.88rem !important;
+  padding: 0.1rem 0.4rem !important;
+  border-radius: 3px !important;
+  border: 1px solid var(--border) !important;
+}
+
+pre code {
+  color: var(--white) !important;
+  border: none !important;
+  padding: 0 !important;
 }
 
 /* Tables */
 table {
   border-collapse: collapse !important;
   width: 100% !important;
+  font-size: 0.9rem !important;
 }
 
 th {
-  background-color: var(--green-dark) !important;
-  color: var(--green) !important;
-  border: 1px solid var(--green) !important;
-  padding: 8px !important;
+  background-color: var(--bg-sidebar) !important;
+  color: var(--blue-light) !important;
+  border: 1px solid var(--border) !important;
+  padding: 8px 12px !important;
+  font-family: 'Fira Code', monospace !important;
+  font-weight: 500 !important;
 }
 
 td {
-  border: 1px solid var(--green-dark) !important;
-  padding: 8px !important;
-  color: var(--green) !important;
+  border: 1px solid var(--border) !important;
+  padding: 8px 12px !important;
+  color: var(--white) !important;
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg-panel) !important;
 }
 
 tr:hover {
-  background-color: #0d1a0d !important;
+  background-color: var(--bg-hover) !important;
 }
 
 /* Blockquotes */
 blockquote {
-  border-left: 3px solid var(--green) !important;
-  background-color: #0d1a0d !important;
+  border-left: 3px solid var(--accent) !important;
+  background-color: var(--bg-panel) !important;
   padding: 0.5rem 1rem !important;
-  color: var(--green-dim) !important;
+  color: var(--gray) !important;
+  margin: 1rem 0 !important;
+  border-radius: 0 4px 4px 0 !important;
 }
 
 /* Footer */
 footer {
-  background-color: #000 !important;
-  border-top: 1px solid var(--green-dark) !important;
-  color: var(--green-dim) !important;
+  background-color: #007acc !important;
+  color: #fff !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.8rem !important;
 }
 
 footer a {
-  color: var(--green-dim) !important;
+  color: #fff !important;
 }
 
 /* Date and meta */
 time, .f6, .gray {
-  color: var(--green-dim) !important;
-  font-family: 'Share Tech Mono', monospace !important;
+  color: var(--gray) !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 0.8rem !important;
 }
 
-/* Horizontal rules */
+time::before {
+  content: '📅 ' !important;
+}
+
+/* HR */
 hr {
-  border-color: var(--green-dark) !important;
+  border-color: var(--border) !important;
 }
 
-/* Strong/bold */
+/* Strong */
 strong, b {
-  color: #80ff80 !important;
+  color: var(--blue-light) !important;
+  font-weight: 600 !important;
+}
+
+/* Lists */
+ul li::marker {
+  color: var(--accent) !important;
+}
+
+ol li::marker {
+  color: var(--yellow) !important;
+  font-family: 'Fira Code', monospace !important;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  background: var(--black);
+  width: 8px;
+  background: var(--bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--green-dark);
-  border-radius: 3px;
+  background: var(--border);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--green);
+  background: var(--gray);
 }
 
-/* Blinking cursor effect on title */
-.site-brand a::after {
-  content: '_';
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+/* Activity bar accent line */
+body::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, #0078d4, #c586c0, #4ec9b0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
