@@ -1,4 +1,12 @@
 baseURL = 'https://palomaresss.github.io/portafolio/'
 languageCode = 'en-us'
-title = 'Portafolio'
+title = 'My New Hugo Site'
 theme = 'ananke'
+
+[params]
+  custom_css = ['custom.css']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
