@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portafolio</title>
+    <link>http://localhost:1313/portafolio/</link>
+    <description>Recent content on Portafolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Feb 2026 21:24:11 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/portafolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Practica4: El paradigma logico</title>
+      <link>http://localhost:1313/portafolio/practica4/</link>
+      <pubDate>Fri, 20 Feb 2026 21:24:11 -0800</pubDate>
+      <guid>http://localhost:1313/portafolio/practica4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practica3</title>
+      <link>http://localhost:1313/portafolio/practica3/</link>
+      <pubDate>Fri, 20 Feb 2026 21:24:03 -0800</pubDate>
+      <guid>http://localhost:1313/portafolio/practica3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practica2: El paradigma orientado a objetos</title>
+      <link>http://localhost:1313/portafolio/practica2/</link>
+      <pubDate>Fri, 20 Feb 2026 21:23:54 -0800</pubDate>
+      <guid>http://localhost:1313/portafolio/practica2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practica1: Elementos basicos de los lenguajes de programacion</title>
+      <link>http://localhost:1313/portafolio/practica1/</link>
+      <pubDate>Fri, 20 Feb 2026 21:22:59 -0800</pubDate>
+      <guid>http://localhost:1313/portafolio/practica1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practica0: Manejo de repositorios</title>
+      <link>http://localhost:1313/portafolio/practica0/</link>
+      <pubDate>Fri, 20 Feb 2026 21:20:16 -0800</pubDate>
+      <guid>http://localhost:1313/portafolio/practica0/</guid>
+      <description>&lt;h1 id=&#34;reporte-de-prácticas-creación-de-portafolio-con-markdown-git-y-hugo&#34;&gt;Reporte de Prácticas: Creación de Portafolio con Markdown, Git y Hugo&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Enlaces del Proyecto:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Repositorio en GitHub:&lt;/strong&gt; [Inserta aquí tu enlace, ej: https://github.com/tu-usuario/tu-repo]&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Página Estática (GitHub Pages):&lt;/strong&gt; [Inserta aquí tu enlace, ej: https://tu-usuario.github.io/tu-repo]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;descripcion-de-la-practica&#34;&gt;Descripcion de la practica&lt;/h2&gt;&#xA;&lt;p&gt;El objetivo de esta práctica integral es dominar las herramientas fundamentales para la documentación y publicación de proyectos en el desarrollo de software. A lo largo de tres sesiones, se exploró el uso de Markdown para la redacción de contenido, el sistema Git y la plataforma GitHub para el control de versiones, y finalmente, el generador de sitios estáticos Hugo junto con GitHub Actions para automatizar y publicar un portafolio profesional en la nube.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

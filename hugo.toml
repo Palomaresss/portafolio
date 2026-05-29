@@ -1,0 +1,4 @@
+baseURL = 'https://palomaresss.github.io/portafolio/'
+languageCode = 'en-us'
+title = 'Portafolio'
+theme = 'ananke'
