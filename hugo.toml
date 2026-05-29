@@ -1,6 +1,6 @@
-baseURL = 'https://palomaresss.github.io/portafolio/'
+﻿baseURL = 'https://palomaresss.github.io/portafolio/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Portafolio'
 theme = 'ananke'
 
 [params]
